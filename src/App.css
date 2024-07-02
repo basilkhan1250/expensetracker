@@ -32,7 +32,119 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+.expensetracker {
+  display: inline-block;
+  border: 1px solid rgb(230, 221, 221);
+  background-color: rgb(230, 221, 221);
+  margin-top: 10px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.btn {
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 100px;
+  background-color: rgb(248, 243, 243);
+  border: 1px solid rgb(243, 235, 235);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(250, 232, 232);
+}
+
+#diss {
+  height: 25px;
+  width: 400px;
+  border: 1px solid rgb(230, 221, 221);
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+#amount {
+  height: 25px;
+  width: 400px;
+  border: 1px solid rgb(230, 221, 221);
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+#balance {
+  margin: 0px;
+}
+
+#card {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(243, 235, 235);
+  border-radius: 20px;
+}
+
+#red {
+  color: red;
+}
+
+#green {
+  color: rgb(5, 209, 5);
+}
+
+.translist {
+  padding: 0px;
+  margin: 0px;
+}
+/* 
+.translist li {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 5px gray;
+  padding: 10px;
+  background-color: rgb(243, 235, 235);
+  margin: 5px;
+  border-radius: 20px;
+} */
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  transition-duration: 0.2s;
+}
+.li:hover{
+  padding-left: 50px;
+  transition-duration: 0.2s;
+}
+
+.delete-button {
+  display: none;
+  position: absolute;
+  left: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.li:hover .delete-button {
+  display: inline-block;
+  z-index: 2;
 }
